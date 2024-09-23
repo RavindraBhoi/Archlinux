@@ -20,34 +20,44 @@ while true; do
     fi
 done
 
-if [[ $BOOT == 1 ]]; then
+if [[ $BOOT == 1 ]];
+then
   echo "you chose Plasma"
   sudo pacman -Sy plasma-meta plasma-workspace xorg gdm
 elif [[ $BOOT == 2 ]];
+then
   echo "you chose GNOME"
   sudo pacman -Sy gnome xorg gdm
 elif [[ $BOOT == 3 ]];
+then
   echo "you chose XFCE4"
   sudo pacman -Sy xfce4 xorg gdm
 elif [[ $BOOT == 4 ]];
+then
   echo "you chose Cinnamon"
   sudo pacman -Sy cinnamon xorg gdm
 elif [[ $BOOT == 5 ]];
+then
   echo "you chose Cosmic"
   sudo pacman -Sy cosmic xorg gdm
 elif [[ $BOOT == 6 ]];
+then
   echo "you chose Deepin"
   sudo pacman -Sy Deepin xorg gdm
 elif [[ $BOOT == 7 ]];
+then
   echo "you chose Budgie"
   sudo pacman -Sy budgie xorg gdm
 elif [[ $BOOT == 8 ]];
+then
   echo "you chose Cutefish"
   sudo pacman -Sy cutefish xorg gdm
 elif [[ $BOOT == 9 ]];
+then
   echo "you chose Enlightenment"
   sudo pacman -Sy enlightenment xorg gdm
 elif [[ $BOOT == 10 ]];
+then
   echo "you chose GNOME-Flashback"
   sudo pacman -Sy gnome-flashback xorg gdm
 else [[ $BOOT == 11 ]];
