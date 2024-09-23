@@ -65,7 +65,7 @@ else [[ $BOOT == 11 ]];
   sudo pacman -Sy mate xorg gdm
 fi
 
-sudo systemctl enacle gdm
+sudo systemctl enable gdm
 echo "you can reboot now!!"
     
     
