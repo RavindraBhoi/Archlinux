@@ -43,7 +43,7 @@ then
 elif [[ $BOOT == 6 ]];
 then
   echo "you chose Deepin"
-  sudo pacman -Sy Deepin xorg gdm
+  sudo pacman -Sy deepin xorg gdm
 elif [[ $BOOT == 7 ]];
 then
   echo "you chose Budgie"
