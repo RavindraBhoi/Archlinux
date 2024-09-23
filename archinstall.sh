@@ -63,7 +63,7 @@ echo "-- Bootloader Installation  --"
 echo "--------------------------------------"
 
 pacman -S grub efibootmgr dosfstools mtools --noconfirm --needed
-grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id="Arch Linux"
+grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id="Arch Linux"
 grub-mkconfig -o /boot/grub/grub.cfg
 
 systemctl enable NetworkManager bluetooth
