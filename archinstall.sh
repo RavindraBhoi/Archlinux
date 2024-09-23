@@ -17,12 +17,12 @@ read PASSWD
 
 echo -e "\nCreating Filesystem...\n"
 
-mkfs.fat -F32 "EFISYSTEM" "$(EFI)"
-mkfs.ext4 "ROOT" "$(ROOT)"
+mkfs.vfat -F32 -n "EFISYSTEM" "$(EFI)"
+mkfs.ext4 -L "ROOT" "$(ROOT)"
 
-mount "$(ROOT)" /mnt
+mount -t ext4 "$(ROOT)" /mnt
 mkdir /mnt/boot
-mount "$(EFI)"
+mount -t vfat "$(EFI)" /mnt/boot
 
 echo "__________________________________________________"
 echo "INSTALLING ARCH BASE ON MAIN DRIVE"
