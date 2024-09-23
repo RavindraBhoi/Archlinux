@@ -16,6 +16,9 @@ while true; do
     if [[ $BOOT == 1 || $BOOT == 2 || $BOOT == 3 || $BOOT == 4 || $BOOT == 5 || $BOOT == 6 || $BOOT == 7 || $BOOT == 8 || $BOOT == 9 || $BOOT == 10 || $BOOT == 11 ]]; then
         break
     else
+        echo "________________"
+        echo " GOLI BETA MASTI NAHI"
+        echo "________________"
         echo "Invalid input. enter from 1 to 11"
     fi
 done
