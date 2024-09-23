@@ -20,7 +20,7 @@ while true; do
     fi
 done
 
-if [[ $BOOT ==1 ]]; then
+if [[ $BOOT == 1 ]]; then
   echo "you chose Plasma"
   sudo pacman -Sy plasma-meta plasma-workspace xorg gdm
 elif [[ $BOOT == 2 ]]
