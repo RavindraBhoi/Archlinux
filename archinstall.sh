@@ -29,7 +29,7 @@ mount "${EFI}" /mnt/boot
 echo "--------------------------------------"
 echo "-- INSTALLING Base Arch Linux --"
 echo "--------------------------------------"
-pacstrap -i /mnt base base-devel linux linux-firmware linux-headers networkmanager sudo nano intel-ucode bluez bluez-utils git --noconfirm --needed
+pacstrap -i /mnt base base-devel linux linux-headers linux-firmware intel-ucode sudo git nano vim neofetch htop bluez bluez-utils networkmanager cargo --noconfirm --needed
 
 # fstab
 genfstab -U /mnt >> /mnt/etc/fstab
