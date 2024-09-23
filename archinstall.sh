@@ -24,7 +24,7 @@ mkfs.ext4 "${ROOT}"
 # mount target
 mount "${ROOT}" /mnt
 mkdir /mnt/boot
-mount "${EFI}" /mnt/boot/efi
+mount "${EFI}" /mnt/boot
 
 echo "--------------------------------------"
 echo "-- INSTALLING Base Arch Linux --"
