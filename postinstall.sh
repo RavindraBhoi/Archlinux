@@ -23,34 +23,34 @@ done
 if [[ $BOOT == 1 ]]; then
   echo "you chose Plasma"
   sudo pacman -Sy plasma-meta plasma-workspace xorg gdm
-elif [[ $BOOT == 2 ]]
+elif [[ $BOOT == 2 ]];
   echo "you chose GNOME"
   sudo pacman -Sy gnome xorg gdm
-elif [[ $BOOT == 3 ]]
+elif [[ $BOOT == 3 ]];
   echo "you chose XFCE4"
   sudo pacman -Sy xfce4 xorg gdm
-elif [[ $BOOT == 4 ]]
+elif [[ $BOOT == 4 ]];
   echo "you chose Cinnamon"
   sudo pacman -Sy cinnamon xorg gdm
-elif [[ $BOOT == 5 ]]
+elif [[ $BOOT == 5 ]];
   echo "you chose Cosmic"
   sudo pacman -Sy cosmic xorg gdm
-elif [[ $BOOT == 6 ]]
+elif [[ $BOOT == 6 ]];
   echo "you chose Deepin"
   sudo pacman -Sy Deepin xorg gdm
-elif [[ $BOOT == 7 ]]
+elif [[ $BOOT == 7 ]];
   echo "you chose Budgie"
   sudo pacman -Sy budgie xorg gdm
-elif [[ $BOOT == 8 ]]
+elif [[ $BOOT == 8 ]];
   echo "you chose Cutefish"
   sudo pacman -Sy cutefish xorg gdm
-elif [[ $BOOT == 9 ]]
+elif [[ $BOOT == 9 ]];
   echo "you chose Enlightenment"
   sudo pacman -Sy enlightenment xorg gdm
-elif [[ $BOOT == 10 ]]
+elif [[ $BOOT == 10 ]];
   echo "you chose GNOME-Flashback"
   sudo pacman -Sy gnome-flashback xorg gdm
-else [[ $BOOT == 11 ]]
+else [[ $BOOT == 11 ]];
   echo "you chose Mate"
   sudo pacman -Sy mate xorg gdm
 fi
