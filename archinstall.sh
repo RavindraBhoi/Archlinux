@@ -1,11 +1,5 @@
 #!/usr/bin/env bash
 
-echo "Please Enter EFI partition:"
-read EFI
-
-echo "Please enter root(/) partition:"
-read ROOT
-
 echo "Please enter root password:"
 read ROOTPASSWD
 
@@ -17,12 +11,12 @@ read PASSWD
 
 echo -e "\nCreating Filesystem...\n"
 
-mkfs.vfat -F32 -n "EFISYSTEM" "$(EFI)"
-mkfs.ext4 -L "ROOT" "$(ROOT)"
+mkfs.vfat -F32 -n /dev/sda1
+mkfs.ext4 -L /dev/sda2
 
-mount -t ext4 "$(ROOT)" /mnt
+mount /dev/sda2 /mnt
 mkdir /mnt/boot
-mount -t vfat "$(EFI)" /mnt/boot
+mount /dev/sda1 /mnt/boot
 
 echo "__________________________________________________"
 echo "INSTALLING ARCH BASE ON MAIN DRIVE"
@@ -35,8 +29,10 @@ genfstab -U /mnt >> /mnt/etc/fstab
 cat <<READLEND> /mnt/next.sh
 passwd
 "$(ROOTPASSWD)"
+"$(ROOTPASSWD)"
 useradd -m -g users -G wheel,storage,video,audio -s /bin/bash "$(USER)"
 passwd "$(USER)"
+"$(PASSWD)"
 "$(PASSWD)"
 sed -i 's/^# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL) ALL/' /etc/sudoers
 ln -sf /usr/share/zoneinfo/Asia/Kolkata /etc/localtime
