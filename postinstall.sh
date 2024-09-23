@@ -50,7 +50,7 @@ elif [[ $BOOT == 9 ]]
 elif [[ $BOOT == 10 ]]
   echo "you chose GNOME-Flashback"
   sudo pacman -Sy gnome-flashback xorg gdm
-elif [[ $BOOT == 11 ]]
+else [[ $BOOT == 11 ]]
   echo "you chose Mate"
   sudo pacman -Sy mate xorg gdm
 fi
