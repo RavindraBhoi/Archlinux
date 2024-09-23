@@ -67,9 +67,10 @@ grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id="Arch Lin
 grub-mkconfig -o /boot/grub/grub.cfg
 
 systemctl enable NetworkManager bluetooth
-echo "you can shutdown now"
+
 exit
 REALEND
 
 arch-chroot /mnt sh next.sh
 umount -lR /mnt
+echo "you can shutdown now"
