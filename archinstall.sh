@@ -29,7 +29,7 @@ mount "${EFI}" /mnt/boot
 echo "--------------------------------------"
 echo "-- INSTALLING Base Arch Linux --"
 echo "--------------------------------------"
-pacstrap /mnt base base-devel linux linux-firmware linux-headers networkmanager sudo nano intel-ucode bluez bluez-utils git --noconfirm --needed
+pacstrap -i /mnt base base-devel linux linux-firmware linux-headers networkmanager sudo nano intel-ucode bluez bluez-utils git --noconfirm --needed
 
 # fstab
 genfstab -U /mnt >> /mnt/etc/fstab
@@ -73,4 +73,4 @@ REALEND
 
 arch-chroot /mnt sh next.sh
 umount -lR /mnt
-echo "you can shutdown now"
+echo "you can reboot now"
