@@ -22,37 +22,40 @@ done
 
 if [[ $BOOT ==1 ]]; then
   echo "you chose Plasma"
-  sudo pacman -Sy plasma-meta plasma-workspace xorg
+  sudo pacman -Sy plasma-meta plasma-workspace xorg gdm
 elif [[ $BOOT == 2 ]]
   echo "you chose GNOME"
-  sudo pacman -Sy gnome xorg
+  sudo pacman -Sy gnome xorg gdm
 elif [[ $BOOT == 3 ]]
   echo "you chose XFCE4"
-  sudo pacman -Sy xfce4 xorg
+  sudo pacman -Sy xfce4 xorg gdm
 elif [[ $BOOT == 4 ]]
   echo "you chose Cinnamon"
-  sudo pacman -Sy cinnamon xorg
+  sudo pacman -Sy cinnamon xorg gdm
 elif [[ $BOOT == 5 ]]
   echo "you chose Cosmic"
-  sudo pacman -Sy cosmic xorg
+  sudo pacman -Sy cosmic xorg gdm
 elif [[ $BOOT == 6 ]]
   echo "you chose Deepin"
-  sudo pacman -Sy Deepin xorg
+  sudo pacman -Sy Deepin xorg gdm
 elif [[ $BOOT == 7 ]]
   echo "you chose Budgie"
-  sudo pacman -Sy budgie xorg
+  sudo pacman -Sy budgie xorg gdm
 elif [[ $BOOT == 8 ]]
   echo "you chose Cutefish"
-  sudo pacman -Sy cutefish xorg
+  sudo pacman -Sy cutefish xorg gdm
 elif [[ $BOOT == 9 ]]
   echo "you chose Enlightenment"
-  sudo pacman -Sy enlightenment xorg
+  sudo pacman -Sy enlightenment xorg gdm
 elif [[ $BOOT == 10 ]]
   echo "you chose GNOME-Flashback"
-  sudo pacman -Sy gnome-flashback xorg
+  sudo pacman -Sy gnome-flashback xorg gdm
 elif [[ $BOOT == 11 ]]
   echo "you chose Mate"
-  sudo pacman -Sy mate xorg
+  sudo pacman -Sy mate xorg gdm
 fi
+
+sudo systemctl enacle gdm
+echo "you can reboot now!!"
     
     
