@@ -40,7 +40,7 @@ then
   echo "----------------"
   echo "you chose XFCE4"
   echo "----------------"
-  sudo pacman -Sy xfce4 xorg sddm kitty
+  sudo pacman -Sy xfce4 xorg ly kitty
 elif [[ $BOOT == 4 ]];
 then
   echo "----------------"
@@ -90,7 +90,7 @@ else [[ $BOOT == 11 ]];
   sudo pacman -Sy mate xorg lemurs kitty
 fi
 
-sudo systemctl enable lemurs
+sudo systemctl enable ly
 sudo pacman -S os-prober --noconfirm --needed
 sudo sed -i 's/^#GRUB_DISABLE_OS_PROBER=false/GRUB_DISABLE_OS_PROBER=false/' /etc/default/grub
 sudo grub-mkconfig -o /boot/grub/grub.cfg
