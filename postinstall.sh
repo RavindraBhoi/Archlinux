@@ -28,7 +28,7 @@ then
   echo "----------------"
   echo "you chose Plasma"
   echo "----------------"
-  sudo pacman -Sy plasma-desktop xorg sddm kitty 
+  sudo pacman -Sy plasma-meta xorg sddm kitty 
 elif [[ $BOOT == 2 ]];
 then
   echo "----------------"
