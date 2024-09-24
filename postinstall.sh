@@ -91,6 +91,8 @@ else [[ $BOOT == 11 ]];
 fi
 
 sudo systemctl enable sddm
+sudo pacman -S os-prober --noconfirm --needed
+
 echo "you can reboot now!!"
     
     
