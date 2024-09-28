@@ -28,66 +28,66 @@ then
   echo "----------------"
   echo "you chose Plasma"
   echo "----------------"
-  sudo pacman -Sy plasma-meta xorg ly kitty 
+  sudo pacman -Sy plasma-meta xorg ly konsole
 elif [[ $BOOT == 2 ]];
 then
   echo "----------------"
   echo "you chose GNOME"
   echo "----------------"
-  sudo pacman -Sy gnome xorg ly kitty
+  sudo pacman -Sy gnome xorg ly alacritty
 elif [[ $BOOT == 3 ]];
 then
   echo "----------------"
   echo "you chose XFCE4"
   echo "----------------"
-  sudo pacman -Sy xfce4 xorg ly kitty
+  sudo pacman -Sy xfce4 xorg ly alacritty 
 elif [[ $BOOT == 4 ]];
 then
   echo "----------------"
   echo "you chose Cinnamon"
   echo "----------------"
-  sudo pacman -Sy cinnamon xorg ly kitty
+  sudo pacman -Sy cinnamon xorg ly alacritty 
 elif [[ $BOOT == 5 ]];
 then
   echo "----------------"
   echo "you chose Cosmic"
   echo "----------------"
-  sudo pacman -Sy cosmic xorg ly kitty
+  sudo pacman -Sy cosmic xorg ly alacritty 
 elif [[ $BOOT == 6 ]];
 then
   echo "----------------"
   echo "you chose Deepin"
   echo "----------------"
-  sudo pacman -Sy deepin xorg ly kitty
+  sudo pacman -Sy deepin xorg ly alacritty 
 elif [[ $BOOT == 7 ]];
 then
   echo "----------------"
   echo "you chose Budgie"
   echo "----------------"
-  sudo pacman -Sy budgie xorg ly kitty
+  sudo pacman -Sy budgie xorg ly alacritty
 elif [[ $BOOT == 8 ]];
 then
   echo "----------------"
   echo "you chose Cutefish"
   echo "----------------"
-  sudo pacman -Sy cutefish xorg ly kitty
+  sudo pacman -Sy cutefish xorg ly alacritty
 elif [[ $BOOT == 9 ]];
 then
   echo "----------------"
   echo "you chose Enlightenment"
   echo "----------------"
-  sudo pacman -Sy enlightenment xorg ly kitty
+  sudo pacman -Sy enlightenment xorg ly alacritty
 elif [[ $BOOT == 10 ]];
 then
   echo "----------------"
   echo "you chose GNOME-Flashback"
   echo "----------------"
-  sudo pacman -Sy gnome-flashback xorg ly kitty
+  sudo pacman -Sy gnome-flashback xorg ly alacritty 
 else [[ $BOOT == 11 ]];
   echo "----------------"
   echo "you chose Mate"
   echo "----------------"
-  sudo pacman -Sy mate xorg ly kitty
+  sudo pacman -Sy mate xorg ly alacritty 
 fi
 
 sudo systemctl enable ly
