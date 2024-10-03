@@ -38,11 +38,15 @@ Once you are on Arch Installation terminal type the following command to make fo
 ```
 setfont ter-132n
 ```
+![PXL_20241003_091419689 MP~2](https://github.com/user-attachments/assets/748c0cb9-0168-4033-b87f-50ea52a14a75)
+
 #### To connect to the internet use iwctl utility.
 type the following commands.
 ```
 iwctl device list
 ```
+![PXL_20241003_091911761](https://github.com/user-attachments/assets/0fdbb747-102d-4e7d-91b4-b7841bb60e4c)
+
 ```
 iwctl station YOUR_DEVICE get-networks
 ```
