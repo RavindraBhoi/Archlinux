@@ -1,5 +1,5 @@
 ---
-# Archlinux installation made easy with my custom script!!
+# Archlinux installation made easy with my custom script!! 8-)
 ---
 #### Install archlinux under few minutes. It works on both Clean install and Dualboot with windows.
 ___
@@ -42,7 +42,7 @@ Once you are on Arch Installation terminal type the following command to make fo
 ```
 setfont ter-132n
 ```
-To connect to the internet using iwctl utility.
+#### To connect to the internet use iwctl utility.
 type the following commands.
 ```
 iwctl device list
@@ -62,5 +62,89 @@ ping google.com
 If you are receiving bytes it's connected.
 Interrupt the ping using Ctrl+C key.
  
+#### Now Create partition
+type the command.
+```
+lsblk
+```
+It will give list of your drives. 
+
+I am installing on nvme drive. If you are installing on hard disk your drive will be sda, sdb or sdc. verify with the drive size.
 
 
+Now type following command to enter cfdisk utility and create the partition.
+```
+cfdisk /dev/YOUR_DISK
+ 
+--in my case it is nvme0n1. So, I will cfdisk into that--
+
+cfdisk /dev/nvme0n1
+```
+Once you are in cfdisk utility. 
++ select the free space and type 300M, click enter.
++ select the newly created 300M partition and change the type to **EFI partition**.
+
+--photo--
++ select the rest free space and click enter. Keep type as **Linux Filesystem**.
++ go to WRITE and click enter
++ type "yes" and click enter.
+
+Verify newly created partition by typing **lsblk**
+```
+lsblk
+```
+--photo--
+
+
+Now, type the following command to sync the database and refresh the mirrors.
+```
+sudo pacman -Syy
+```
+#### Download the installation script using curl
+```
+curl https://raw.githubusercontent.com/RavindraBhoi/Archlinux/main/archinstall.sh -o archinstall.sh
+```
+Verify with **ls**
+
+--photo--
+ 
+If script is not downloaded run the curl again as it is case sensitive.
+#### Run the installation script.
+To run the installation script run the following.
+```
+sh archinstall.sh
+```
++ type the EFI partition
+
+--photo--
+
++ type the Root partition
+
+--photo--
+
++ write your username. It will be used for login.
+
+--photo--
+
++ write your full name
+
+--photo-- 
+
++ type password 
+
+--photo-- 
+
++ type your processor name. Intel or AMD
+
+
+for Intel
+```
+intel
+```
+for AMD
+```
+amd
+```
+___
+#### Relax, your installation has started. Installation time depends on internet speed and drive speed.
+___
