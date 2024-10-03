@@ -1,4 +1,4 @@
-Archlinux installation made easy with my custom script!!
+#Archlinux installation made easy with my custom script!!
 
 Install archlinux under few minutes. It works on both Clean install and Dualboot with windows.
 follow the guide..
@@ -17,4 +17,7 @@ open disk management on windows and shrink a volume from your drive (20 GB minim
 
 Now, shutdown your PC.
 Connect the pendrive to your PC and turn it on. go to the boot menu by pressing F9 key(for HP computers). for your computer boot menu key might be diffrerent. google it.
-Select your pendrive from boot menu. 
+Select your pendrive from boot menu. then select install archlinux option.
+
+once you are on terminal type the following command to make the font bigger.
+
