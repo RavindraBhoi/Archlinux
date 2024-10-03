@@ -76,4 +76,4 @@ REALEND
 
 arch-chroot /mnt sh next.sh
 umount -lR /mnt
-echo "you can reboot now"
+echo "you can shutdown now"
