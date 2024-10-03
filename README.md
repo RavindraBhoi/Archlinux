@@ -50,7 +50,7 @@ iwctl device list
 ```
 iwctl station YOUR_DEVICE get-networks
 ```
-![PXL_20241003_091957300](https://github.com/user-attachments/assets/46ddec36-15dc-4ce6-a890-047b4ca8d000)
+![PXL_20241003_091957300](https://github.com/user-attachments/assets/2d9ee5ee-47d9-4999-8f63-8d66adb4d44c)
 
 This will list the available networks. to connect to the network type following.
 ```
