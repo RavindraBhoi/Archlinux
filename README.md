@@ -1,12 +1,11 @@
----
-# Archlinux installation made easy with my custom script!! 8-)
+# Archlinux installation made easy with my custom script!!
 ---
 #### Install archlinux under few minutes. It works on both Clean install and Dualboot with windows.
 ___
 #### The Script is for Intel and AMD x86_64 architecture.
 ___
 ### 1. Download the ISO of Archlinux.
-Download the Archlinux ISO from: https://archlinux.org/download/ .
+Download the Archlinux ISO from [Download Archlinux](https://archlinux.org/download/) .
 Scroll down on the download page and download from your nearest mirror.
 
 ### 2.Make a Bootable USB
@@ -29,7 +28,7 @@ Open disk management on windows and shrink a volume from your drive (20 GB minim
 
 If you do not know how to shrink free space from drive refer to this link. 
 
-https://support.microsoft.com/en-us/topic/microsoft-support-how-to-re-partition-without-destroying-the-data-c3d64de0-4672-b21f-de4e-b4908fb35ae3
+[Shrink your Drive](https://support.microsoft.com/en-us/topic/microsoft-support-how-to-re-partition-without-destroying-the-data-c3d64de0-4672-b21f-de4e-b4908fb35ae3)
 
 ___
 Now, shutdown your PC.
@@ -148,3 +147,82 @@ amd
 ___
 #### Relax, your installation has started. Installation time depends on internet speed and drive speed.
 ___
+
+After installation is finished shutdown your PC using following
+```
+shutdown now
+```
+___
+___
+#### You have Installed the base archlinux on your computer
+___
+___
+#### Now turn on your computer to install Desktop environment
+This time boot to archlinux from boot-menu.
+
+Login with your credentials. and type the following to set font-size big
+```
+setfont -d
+```
+#### Connect to the internet
+Use nmcli utility to connect to the internet. Type the following command and replace NETWORK_NAME with your network name and PASSWORD with your network password
+```
+nmcli dev wifi connect NETWORK_NAME password "PASSWORD"
+```
+I am assuming your PC has wifi. If not use this guide to know more about [nmcli](https://www.geeksforgeeks.org/nmcli-command-in-linux-with-examples/).
+
+Once you are connected to internet verify using **ping** command.
+
+#### Download script to install your favorite Desktop Environment
+To download type following
+```
+curl https://raw.githubusercontent.com/RavindraBhoi/Archlinux/main/postinstall.sh -o postinstall.sh
+```
+Verify the downloaded file with **ls** command.
+
+Make the file **Executable** by typing following
+```
+chmod +x postinstall.sh
+```
+Now, Run the script.
+```
+sh postinstall.sh
+```
+This will give the following options
+1. KDE plasma
+2. GNOME
+3. XFCE4
+4. Cinnamon
+5. Cosmic
+6. Deepin
+7. Budgie
+8. Cutefish
+9. Enlightenment
+10. Gnome-Flashback
+11. Mate
+
+Select any.
+
+It will ask for your password. Press enter for all defaults. It will ask for password again to enter Windows boot entry to bootloader.
+#### Now, Reboot your PC
+```
+reboot
+```
+___
+** **OPTIONAL** ** Neon Theme for Alacritty terminal
+___
+#### Open the terminal and Download the theme script by typing following.
+```
+curl https://raw.githubusercontent.com/RavindraBhoi/Archlinux/main/alacritty.sh -o alacritty.sh
+```
+verify the download by **ls** command.
+#### Make the script Executable
+Type the following command
+```
+chmod +x alacritty.sh
+```
+#### Run the script
+```
+sh alacritty.sh
+```
+close the Alacritty Terminal and reopen it. You have theme on your terminal now.
