@@ -1,6 +1,5 @@
 ---
 # Archlinux installation made easy with my custom script!! 8-)
-
 ---
 #### Install archlinux under few minutes. It works on both Clean install and Dualboot with windows.
 ___
