@@ -15,6 +15,9 @@ read NAME
 echo "Please enter your Password"
 read PASSWORD 
 
+echo "Enter your Processor. type intel for intel processors and amd for amd processors (type in lowercase)"
+read PROCESSOR
+
 # make filesystems
 echo -e "\nCreating Filesystems...\n"
 
@@ -29,7 +32,7 @@ mount "${EFI}" /mnt/boot
 echo "--------------------------------------"
 echo "-- INSTALLING Base Arch Linux --"
 echo "--------------------------------------"
-pacstrap -i /mnt base base-devel linux linux-headers linux-firmware intel-ucode sudo git nano vim neofetch htop bluez bluez-utils networkmanager cargo --noconfirm --needed
+pacstrap -i /mnt base base-devel linux linux-headers linux-firmware "${PROCESSOR}"-ucode sudo git nano vim neofetch htop bluez bluez-utils networkmanager cargo --noconfirm --needed
 
 # fstab
 genfstab -U /mnt >> /mnt/etc/fstab
