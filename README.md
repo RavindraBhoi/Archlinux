@@ -10,9 +10,7 @@ Scroll down on the download page and download from your nearest mirror.
 ### 2.Make a Bootable USB
 Requirement : 8 GB or higher pendrive
 
-
 Use any flashing Tool. I am using Balena Etcher. you can use Rufus also.
-
 + Connect a Pendrive. 
 + Select Flash from file and select your downloaded Archlinux ISO. 
 + select target and select your Pendrive. 
