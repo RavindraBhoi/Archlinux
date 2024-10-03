@@ -50,15 +50,21 @@ iwctl device list
 ```
 iwctl station YOUR_DEVICE get-networks
 ```
+![PXL_20241003_091957300](https://github.com/user-attachments/assets/46ddec36-15dc-4ce6-a890-047b4ca8d000)
+
 This will list the available networks. to connect to the network type following.
 ```
 iwctl station wlan0 connect NETWORK_NAME
 ```
+![PXL_20241003_092045240](https://github.com/user-attachments/assets/0bca0f1a-b793-459d-97ed-0b01fed55819)
+
 It will ask for password. type your password then click enter.
 To verify the connection type the command.
 ```
 ping google.com
 ```
+![PXL_20241003_092118330](https://github.com/user-attachments/assets/ee4c4a4f-0b56-48dc-ac66-88dffd0c6071)
+
 If you are receiving bytes it's connected.
 Interrupt the ping using Ctrl+C key.
  
