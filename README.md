@@ -156,6 +156,7 @@ ___
 #### You have Installed the base archlinux on your computer
 ___
 ___
+### 5. Install Desktop envirenment on your system
 #### Now turn on your computer to install Desktop environment
 This time boot to archlinux from boot-menu.
 
