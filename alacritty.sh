@@ -1,4 +1,4 @@
-cd /home/ravindra
+cd 
 cd .config
 mkdir alacritty
 cd alacritty
