@@ -16,4 +16,5 @@ open disk management on windows and shrink a volume from your drive (20 GB minim
 ![image](https://github.com/user-attachments/assets/1178a6ae-d94d-4071-a821-136d097db8ee)
 
 Now, shutdown your PC.
-
+Connect the pendrive to your PC and turn it on. go to the boot menu by pressing F9 key(for HP computers). for your computer boot menu key might be diffrerent. google it.
+Select your pendrive from boot menu. 
