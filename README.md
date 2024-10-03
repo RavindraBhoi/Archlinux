@@ -74,9 +74,9 @@ type the command.
 lsblk
 ```
 It will give list of your drives. 
+![PXL_20241003_092151388](https://github.com/user-attachments/assets/45749566-3d46-4f8e-8304-2626d5a952aa)
 
 I am installing on nvme drive. If you are installing on hard disk your drive will be sda, sdb or sdc. verify with the drive size.
-
 
 Now type following command to enter cfdisk utility and create the partition.
 ```
@@ -86,21 +86,25 @@ cfdisk /dev/YOUR_DISK
 
 cfdisk /dev/nvme0n1
 ```
+![PXL_20241003_092210617](https://github.com/user-attachments/assets/d854efbe-a0d0-4a9e-ae42-9e42d73e25a7)
+
 Once you are in cfdisk utility. 
 + select the free space and type 300M, click enter.
+![PXL_20241003_092244701](https://github.com/user-attachments/assets/14894f9b-bf91-462c-8a0d-4566eabd1281)
+![PXL_20241003_092304028](https://github.com/user-attachments/assets/0c5d7feb-7c38-4e60-9467-6f53826c3afe)
 + select the newly created 300M partition and change the type to **EFI partition**.
-
---photo--
+![PXL_20241003_092316232](https://github.com/user-attachments/assets/18fd0c99-8fd0-4be1-96a6-e7a366792372)
 + select the rest free space and click enter. Keep type as **Linux Filesystem**.
+![PXL_20241003_092348927](https://github.com/user-attachments/assets/9834ac93-22d4-4b89-bdfc-9383175e8fcb)
+![PXL_20241003_092357975](https://github.com/user-attachments/assets/d576415d-7366-408f-888d-9c2162bbd1a7)
 + go to WRITE and click enter
 + type "yes" and click enter.
-
+![PXL_20241003_092407534](https://github.com/user-attachments/assets/af6706a6-95a9-44c9-855e-82cc9a20b490)
 Verify newly created partition by typing **lsblk**
 ```
 lsblk
 ```
---photo--
-
+![PXL_20241003_092421417](https://github.com/user-attachments/assets/22eef694-66f2-4a00-be36-ed9151fbd00c)
 
 Now, type the following command to sync the database and refresh the mirrors.
 ```
@@ -110,10 +114,10 @@ sudo pacman -Syy
 ```
 curl https://raw.githubusercontent.com/RavindraBhoi/Archlinux/main/archinstall.sh -o archinstall.sh
 ```
-Verify with **ls**
+![PXL_20241003_092600293](https://github.com/user-attachments/assets/a01bb396-d9d3-4387-9612-4a774a11966d)
 
---photo--
- 
+Verify with **ls**
+![PXL_20241003_092625369](https://github.com/user-attachments/assets/364606f1-d145-4f2f-b5b0-28a0e48ec7ce)
 If script is not downloaded run the curl again as it is case sensitive.
 #### Run the installation script.
 To run the installation script run the following.
@@ -121,28 +125,11 @@ To run the installation script run the following.
 sh archinstall.sh
 ```
 + type the EFI partition
-
---photo--
-
 + type the Root partition
-
---photo--
-
 + write your username. It will be used for login.
-
---photo--
-
 + write your full name
-
---photo-- 
-
 + type password 
-
---photo-- 
-
 + type your processor name. Intel or AMD
-
-
 for Intel
 ```
 intel
@@ -151,6 +138,8 @@ for AMD
 ```
 amd
 ```
+![PXL_20241003_092733882](https://github.com/user-attachments/assets/8bc7e259-3969-4be0-9b95-cbaef4a4c674)
+
 ___
 #### Relax, your installation has started. Installation time depends on internet speed and drive speed.
 ___
