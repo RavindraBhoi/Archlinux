@@ -1,3 +1,4 @@
+cd 
 cd .config
 mkdir alacritty
 cd alacritty
