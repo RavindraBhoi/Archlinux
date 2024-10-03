@@ -1,5 +1,4 @@
 # Archlinux installation made easy with my custom script!!
----
 #### Install archlinux under few minutes. It works on both Clean install and Dualboot with windows.
 ___
 #### The Script is for Intel and AMD x86_64 architecture.
