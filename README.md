@@ -130,6 +130,7 @@ sh archinstall.sh
 + write your full name
 + type password 
 + type your processor name. Intel or AMD
+
 for Intel
 ```
 intel
