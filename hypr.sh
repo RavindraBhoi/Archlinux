@@ -8,10 +8,15 @@ cd
 yay -S wlogout --noconfirm --needed
 sudo systemctl enable sddm
 git clone https://github.com/RavindraBhoi/Archlinux
-cd Archlinux/config
-sudo cp hypr -r /.config
-sudo cp waybar -r /.config
-sudo cp rofi -r /.config
+cd 
+cd Archlinux
+cd configs
+cp -r hypr /home/$USER/.config
+cp -r rofi /home/$USER/.config
+cp -r waybar /home/$USER/.config
+cd hypr
+cp -f hyprland.conf /home/$USER/.config/hypr
+cd 
 sudo pacman -S os-prober --noconfirm --needed
 sudo sed -i 's/^#GRUB_DISABLE_OS_PROBER=false/GRUB_DISABLE_OS_PROBER=false/' /etc/default/grub
 sudo grub-mkconfig -o /boot/grub/grub.cfg
