@@ -1,6 +1,6 @@
 sudo pacman -Syy
 sudo pacman -S hyprland waybar dunst hyprpaper hypridle xdg-desktop-portal-hyprland xdg-user-dirs-gtk rofi-wayland noto-fonts ttf-fira-sans ttf-font-awesome lxappearance libadwaita brightnessctl kitty sddm hyprlock --noconfirm --needed
-sudo pacman -S chromium vlc mousepad thunar file-roller thunar-archive-plugin tumbler ffmpegthumbnailer gvfs-mtp galculator ristretto blueman nm-connection-editor blueman-manager --noconfirm --needed
+sudo pacman -S chromium vlc mousepad thunar file-roller thunar-archive-plugin tumbler ffmpegthumbnailer gvfs-mtp galculator ristretto blueman nm-connection-editor --noconfirm --needed
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si --noconfirm --needed
