@@ -17,6 +17,10 @@ cp -r waybar /home/$USER/.config
 cd hypr
 cp -f hyprland.conf /home/$USER/.config/hypr
 cd 
+cd Archlinux
+cd configs
+cd wlogout
+cp -f style.css /etc/wlogout
 sudo pacman -S os-prober --noconfirm --needed
 sudo sed -i 's/^#GRUB_DISABLE_OS_PROBER=false/GRUB_DISABLE_OS_PROBER=false/' /etc/default/grub
 sudo grub-mkconfig -o /boot/grub/grub.cfg
